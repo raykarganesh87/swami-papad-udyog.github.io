@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swami Papad Udyog | Premium Homemade Papads, Nashik</title>
+  <meta name="description" content="Authentic handmade papads from Nashik. Fresh, hygienic, and traditional recipes by Mrs. Jayshri Ganesh Raykar.">
+  <meta name="keywords" content="papad, papadum, Nashik papad, homemade papad, Swami Papad Udyog, Jayshri Raykar">
+  <meta name="author" content="Swami Papad Udyog">
+  <meta property="og:title" content="Swami Papad Udyog | Premium Homemade Papads">
+  <meta property="og:description" content="Traditional, sun-dried, hygienic papads made with love in Nashik.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://swami-papad-udyog.github.io/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1606787620819-8bdf0c44c293?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (using emoji fallback) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥙</text></svg>">
+
+  <!-- Google Fonts (optional but recommended) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ====== GLOBAL STYLES ====== */
+    :root {
+      --primary: #8B0000;   /* Dark Red */
+      --secondary: #D4AF37; /* Gold (more authentic than pure yellow) */
+      --light: #FFF9F0;     /* Cream */
+      --dark: #3E2723;      /* Dark Brown */
+      --gray: #f0f0f0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      color: #444;
+      background-color: #fafafa;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #6d0000;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(139, 0, 0, 0.2);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #128C7E;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3);
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+      color: var(--dark);
+      font-size: 2.5rem;
+      position: relative;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--secondary);
+      border-radius: 2px;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      background: white;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .logo span {
+      color: var(--secondary);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin-left: 35px;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 1.05rem;
+      position: relative;
+      padding: 5px 0;
+    }
+
+    .nav-links a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--secondary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover:after {
+      width: 100%;
+    }
+
+    /* ====== HERO SECTION ====== */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                  url('https://images.unsplash.com/photo-1606787620819-8bdf0c44c293?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-top: 72px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-btns {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* ====== ABOUT SECTION ====== */
+    .about {
+      background-color: var(--light);
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .about-text h2 {
+      font-size: 2.3rem;
+      margin-bottom: 25px;
+      color: var(--dark);
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .proprietor {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-left: 4px solid var(--secondary);
+    }
+
+    .proprietor h3 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .proprietor h3 i {
+      margin-right: 12px;
+      background: var(--primary);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .proprietor p {
+      font-style: italic;
+      color: #555;
+    }
+
+    /* ====== PRODUCTS SECTION ====== */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: all 0.4s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .product-img {
+      height: 200px;
+      background: #f8f4ed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4.5rem;
+      color: var(--primary);
+    }
+
+    .product-info {
+      padding: 24px;
+    }
+
+    .product-info h3 {
+      color: var(--dark);
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .product-info ul {
+      margin-top: 15px;
+    }
+
+    .product-info ul li {
+      padding: 8px 0;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .product-info ul li:before {
+      content: '✓';
+      color: var(--secondary);
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* ====== CONTACT SECTION ====== */
+    .contact {
+      background-color: white;
+    }
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .contact-content {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-info h3 {
+      color: var(--primary);
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      margin-bottom: 28px;
+    }
+
+    .contact-icon {
+      width: 55px;
+      height: 55px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.4rem;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .contact-text h4 {
+      margin-bottom: 5px;
+      font-size: 1.25rem;
+    }
+
+    .contact-actions {
+      margin-top: 20px;
+    }
+
+    .map {
+      height: 380px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      background: #eee;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .footer-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .footer-logo span {
+      color: var(--secondary);
+    }
+
+    .social-links {
+      margin: 20px 0;
+    }
+
+    .social-links a {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      margin: 0 8px;
+      line-height: 42px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      margin-top: 20px;
+      opacity: 0.8;
+      font-size: 0.95rem;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.4rem; }
+      .hero p { font-size: 1.15rem; }
+      .nav-links { display: none; } /* For simplicity — add mobile menu later if needed */
+      section { padding: 70px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="logo">Swami <span>Papad</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Authentic Handmade Papads from Nashik</h1>
+      <p>Traditional recipes, sun-dried crispiness, and pure hygiene — crafted with devotion by Mrs. Jayshri Ganesh Raykar.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn">📞 Call Now</a>
+        <a href="https://wa.me/919834690743" class="btn btn-whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp Order
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Swami Papad Udyog: Tradition in Every Bite</h2>
+          <p>Established with a vision to preserve and promote the rich culinary heritage of Maharashtra, <strong>Swami Papad Udyog</strong> has been crafting premium-quality papads since its inception.</p>
+          <p>Using only the finest ingredients — locally sourced grains, pure spices, and time-tested recipes — we ensure every papad is hygienic, crispy, and full of authentic flavor.</p>
+          <p>All papads are handmade, sun-dried (no artificial drying), and free from preservatives or artificial colors.</p>
+        </div>
+        <div class="proprietor">
+          <h3><i class="fas fa-user-tie"></i> Our Proprietor</h3>
+          <p><strong>Mrs. Jayshri Ganesh Raykar</strong></p>
+          <p>A passionate advocate of traditional food preservation, she personally oversees every batch to maintain the highest standards of quality and taste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCTS SECTION ====== -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2 class="section-title">Our Papad Range</h2>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-img">🫘</div>
+          <div class="product-info">
+            <h3>Urad Dal Papad</h3>
+            <p>Classic, thin, and extra-crispy. Perfect for everyday meals.</p>
+            <ul>
+              <li>100% Natural Urad Dal</li>
+              <li>Sun-dried for 2 days</li>
+              <li>Zero preservatives</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-img">🌶️</div>
+          <div class="product-info">
+            <h3>Chili Papad</h3>
+            <p>Spicy, bold, and full of flavor — for those who love heat!</p>
+            <ul>
+              <li>Red chili + Urad Dal blend</li>
+              <li>Hand-rolled thickness</li>
+              <li>Vegan & gluten-friendly</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-img">🧂</div>
+          <div class="product-info">
+            <h3>Black Salt (Kala Namak) Papad</h3>
+            <p>Unique tangy aroma and digestive benefits.</p>
+            <ul>
+              <li>Ayurvedic black salt infused</li>
+              <li>Light & airy texture</li>
+              <li>Great for digestion</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-img">🌿</div>
+          <div class="product-info">
+            <h3>Herbal (Methi-Ajwain) Papad</h3>
+            <p>Nourishing blend of fenugreek & carom seeds.</p>
+            <ul>
+              <li>Immunity-boosting herbs</li>
+              <li>Low sodium option</li>
+              <li>Packaged in food-grade pouches</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Visit or Call Us</h3>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-text">
+              <h4>Address</h4>
+              <p>Near Radha Krushna Mandir,<br>Behind GST Bhavan,<br>Pathardi Phata, Nashik – 422010</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-text">
+              <h4>Phone / WhatsApp</h4>
+              <p><a href="tel:+919834690743">+91 98346 90743</a></p>
+              <p><a href="https://wa.me/919834690743" target="_blank">Chat on WhatsApp</a></p>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a href="tel:+919834690743" class="btn" style="margin-right: 10px;">
+              <i class="fas fa-phone"></i> Call Now
+            </a>
+            <a href="https://wa.me/919834690743" class="btn btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="map">
+          <!-- Static Google Maps Image (fallback) -->
+          <a href="https://www.google.com/maps/place/Near+Radha+Krushna+Mandir,+Behind+GST+Bhavan,+Pathardi+Phata,+Nashik,+Maharashtra+422010/@19.998089,73.784528,17z" target="_blank">
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=19.998089,73.784528&zoom=16&size=600x380&markers=color:red%7Clabel:S%7C19.998089,73.784528&key=YOUR_API_KEY_IF_YOU_HAVE_ONE" 
+                 alt="Swami Papad Udyog Location" style="width:100%; height:100%; object-fit:cover;">
+          </a>
+          <!-- Optional: Embed interactive map later (requires API key) -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Swami <span>Papad</span></div>
+        <p>Premium handmade papads from the heart of Nashik — tradition, taste, and trust in every pack.</p>
+        <div class="social-links">
+          <a href="https://wa.me/919834690743" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+919834690743"><i class="fas fa-phone"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; <span id="year">2025</span> Swami Papad Udyog. All Rights Reserved.<br>
+          Proprietor: Mrs. Jayshri Ganesh Raykar | Nashik, Maharashtra
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
